@@ -1,0 +1,141 @@
+body{
+	
+}
+
+
+
+/* Layout */
+.ba-conteiner{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1200px;
+	padding-top: 100px;
+	margin: 0 auto;
+}
+.ba-board{
+	width: 800px;
+	height: 800px;
+	border: 5px solid;
+	background-color: #E7CAAA;
+	margin: 0 auto;
+	box-shadow: 0 10px 10px 10px #888888;
+	position: relative;
+}
+[class*="ba-cell"]{
+	width: 12.5%;
+	height: 12.5%;
+	position: absolute;
+}
+[class*="ba-row"]:nth-child(even) [class*="ba-cell"]:nth-child(even),[class*="ba-row"]:nth-child(odd) [class*="ba-cell"]:nth-child(odd){
+	background-color: #4B4747;
+}
+.ba-row1 [class*="ba-cell"]{
+	top: 0;
+}
+.ba-row2 [class*="ba-cell"]{
+	top: 12.5%;
+}
+.ba-row3 [class*="ba-cell"]{
+	top: 25%;
+}
+.ba-row4 [class*="ba-cell"]{
+	top: 37.5%;
+}
+.ba-row5 [class*="ba-cell"]{
+	top: 50%;
+}
+.ba-row6 [class*="ba-cell"]{
+	top: 62.5%;
+}
+.ba-row7 [class*="ba-cell"]{
+	top: 75%;
+}
+.ba-row8 [class*="ba-cell"]{
+	top: 87.5%;
+}
+.ba-cell2{
+	left: 12.5%;
+}
+.ba-cell3{
+	left: 25%;
+}
+.ba-cell4{
+	left: 37.5%;
+}
+.ba-cell5{
+	left: 50%;
+}
+.ba-cell6{
+	left: 62.5%;
+}
+.ba-cell7{
+	left: 75%;
+}
+.ba-cell8{
+	left: 87.5%;
+}
+[class*="ba-checker"]{
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+	position: absolute;
+	top: 10%;
+	left: 10%;
+	box-shadow: 2px 2px;
+}
+[class*="ba-checker"]:hover{
+transform: translateY(-5px);
+}
+.ba-checker-white{
+	background-color: #D8C398;
+}
+.ba-checker-red{
+	background-color: #CA3728;
+}
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
